@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Sophiya ❤️</title>
+<style>
+  body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: url("https://i.ibb.co/kgqXjGkY/23272018-A489-47-E0-B6-E8-A0-FD64-E65740.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+  }
+
+  #yes {
+    background-color: #ff4d6d;
+    color: white;
+  }
+
+  #no {
+    position: absolute;
+    background-color: #444;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<h1>Sophiya, Will You Be My Valentine? ❤️</h1>
+<p>Every road feels beautiful when I walk it with you.</p>
+
+<button id="yes" onclick="showLove()">YES 💖</button>
+<button id="no">NO ❌</button>
+
+<script>
+const noBtn = document.getElementById("no");
+
+noBtn.addEventListener("mouseover", function() {
+  noBtn.style.top = Math.random() * (window.innerHeight - 50) + "px";
+  noBtn.style.left = Math.random() * (window.innerWidth - 100) + "px";
+});
+
+function showLove() {
+  document.body.innerHTML = `
+    <h1>Forever With You ❤️</h1>
+    <p>Sophiya, you are my safest place, my favorite smile, and my forever person.</p>
+    <p>I promise to love you more with every sunrise. 💍✨</p>
+  `;
+}
+</script>
+
+</body>
+</html>
